@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "seed": 0,
+  "max_input_tokens": 8192,
+  "greedy": true,
+  "dtype": "float16",
+  "archive_batch_size": 4,
+  "plan_generation": {
+    "rounds": 1,
+    "max_new_tokens": 12288
+  },
+  "feedback_regeneration": {
+    "rounds": 2,
+    "max_new_tokens": 6144
+  },
+  "archive_environment": {
+    "torch": "2.3.1+cu121",
+    "transformers": "4.51.3",
+    "lm-format-enforcer": "0.11.3"
+  }
+}
