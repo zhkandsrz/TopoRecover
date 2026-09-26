@@ -1,9 +1,21 @@
 {
-  "release": "review-source-v1",
+  "release": "review-source-v2-core",
   "files": {
     ".gitignore": {
       "bytes": 113,
       "sha256": "f9e5cb5b4293cc5adf37f9b37a36f204a3675ea5e7c85900da5fc68c91645808"
+    },
+    "LICENSE": {
+      "bytes": 1081,
+      "sha256": "f63290afeca97cb75b64d3aa42ad79985ebcac043715202c766e9d66dc0bc6a4"
+    },
+    "NOTICE.md": {
+      "bytes": 1998,
+      "sha256": "a92b05b8d09d123f37ea517b8d336a2a4b80f8ee126f3c34c6d1d7647ef80e24"
+    },
+    "README.md": {
+      "bytes": 5006,
+      "sha256": "e63cc0244a1c575f5aaa333875a20dacffa9cdebf6be4106b049511f383ce81f"
     },
     "configs/main.json": {
       "bytes": 1841,
@@ -12,6 +24,14 @@
     "configs/regeneration.json": {
       "bytes": 447,
       "sha256": "89433c04a3a10f6721a443bbd3722649c9941c5aedfdf3c831909a474177546b"
+    },
+    "data/LICENSE": {
+      "bytes": 21288,
+      "sha256": "616cfe2a42f376776d08de3c361320e0e10d27388495d331d586540d05a59f8e"
+    },
+    "data/README.md": {
+      "bytes": 2423,
+      "sha256": "6474dcfaf4dd6368be4919feed7cfaa1a82acafc87d4a9049b672a5f9f6c43cc"
     },
     "data/construction/evaluable_inputs.jsonl": {
       "bytes": 1165500,
@@ -25,10 +45,6 @@
       "bytes": 16373,
       "sha256": "c31d3da6e551fc12681c231db6b384f74d271ea01cf1f4322e383defe2aad273"
     },
-    "data/LICENSE": {
-      "bytes": 21288,
-      "sha256": "616cfe2a42f376776d08de3c361320e0e10d27388495d331d586540d05a59f8e"
-    },
     "data/main/cases.jsonl": {
       "bytes": 769589,
       "sha256": "2ed37a1bcc3ae453453374e0bac98a5d47c89384d14ee0e419d3d2c75b89838f"
@@ -37,37 +53,17 @@
       "bytes": 1578384,
       "sha256": "0299aa98c2be9a4e1cc8a99dbc42e2b4aacec8fc13e67a555157862a20a5d85a"
     },
-    "data/README.md": {
-      "bytes": 2423,
-      "sha256": "6474dcfaf4dd6368be4919feed7cfaa1a82acafc87d4a9049b672a5f9f6c43cc"
-    },
     "docs/REPRODUCIBILITY.md": {
       "bytes": 9016,
       "sha256": "cc31c12aabc94857ed99a838bea7efb3d4caa1e21bd1b36ed6c215d4fbf424a2"
-    },
-    "docs/source_inventory.json": {
-      "bytes": 3943,
-      "sha256": "7ae15d1d1440a541e05fcbda7b4d26209823138e81f067fa5a5baa9b14fca79a"
     },
     "examples/native_ring.json": {
       "bytes": 538,
       "sha256": "8258266dd11af71644b730ec13eac7cf30d87fe29bb10cb842a5acfc54bd5f05"
     },
-    "LICENSE": {
-      "bytes": 1081,
-      "sha256": "f63290afeca97cb75b64d3aa42ad79985ebcac043715202c766e9d66dc0bc6a4"
-    },
-    "NOTICE.md": {
-      "bytes": 1998,
-      "sha256": "a92b05b8d09d123f37ea517b8d336a2a4b80f8ee126f3c34c6d1d7647ef80e24"
-    },
     "pyproject.toml": {
       "bytes": 663,
       "sha256": "1b35350e65eaab968a2f3f8430dbc660c3ba502e088a8d563c3f408d22c68631"
-    },
-    "README.md": {
-      "bytes": 4907,
-      "sha256": "29b8fb27431af7e93aee5fbead4c4cd820ae553b7da6484224e6b8c3441054b0"
     },
     "results/expected_main_table.json": {
       "bytes": 2427,
@@ -186,16 +182,16 @@
       "sha256": "73a6afc663d2c1a8f8f20a393f6ade81f12ada889855bf4639dbf670dab9c837"
     },
     "src/toporeward/__init__.py": {
-      "bytes": 46,
-      "sha256": "3a1de7d7f2221e627b7fd8f57081289e5d2e100a9ab5e614d86d813f19fe002a"
+      "bytes": 58,
+      "sha256": "737d744f2ed08b102d942ef4769591ef57a9dd5ca1a001d4e104e26e8c74e068"
     },
     "src/toporeward/actions.py": {
       "bytes": 5179,
       "sha256": "6ee4f61cc697feb47fc6e6b800223fe90273aa0b3a3811bedabf8ec2a4ad64da"
     },
     "src/toporeward/bounded_patch_repair.py": {
-      "bytes": 21331,
-      "sha256": "be365f55c9133b22abb144b4bf546411b0b5cdaed657768190a9ba46e0a6021e"
+      "bytes": 21342,
+      "sha256": "2bd2e77a6a4e4f8ed699859e5bd0bdb90a4a1fb9101139b6e5e59d1f154a8bc8"
     },
     "src/toporeward/cad_input_normalization.py": {
       "bytes": 1773,
@@ -209,17 +205,9 @@
       "bytes": 7210,
       "sha256": "b661716ce61bd1bed90d0b9f89cfd20fa4e90c28804d592572f59cc62ced12ee"
     },
-    "src/toporeward/data/__init__.py": {
-      "bytes": 40,
-      "sha256": "df13e11772924099d514d13dfaf0df47c9aaef29edf47731e94ac2a6f506ba87"
-    },
-    "src/toporeward/data/synthetic.py": {
-      "bytes": 8274,
-      "sha256": "98430fe05f37ce98db1ff53d7970151451817da0999167c38a3f5b3ebffde9ad"
-    },
     "src/toporeward/failure_certificate.py": {
-      "bytes": 10811,
-      "sha256": "a1f9f9d03d177579aed4bdac7ebec1814713ec19486f26708455428b2ecd7dd0"
+      "bytes": 10822,
+      "sha256": "708fa5a2228c2b3576125baa9cbb9113c8df68a7799682c90862009970acce27"
     },
     "src/toporeward/feature_plan.py": {
       "bytes": 8855,
@@ -266,8 +254,8 @@
       "sha256": "83fe649049cc6eb94f077360d0bd815e42b8a27dedc4e239fc7a071f52624fd8"
     },
     "src/toporeward/natural_repair_recall.py": {
-      "bytes": 30208,
-      "sha256": "09a8924f36db2d88fed2a13b8570159549385860b4c07af8a7b25f7af6986159"
+      "bytes": 30219,
+      "sha256": "e28e9fd63baeff1e65e4832dc8aa38ffc08cd182eb7adaada04d3d084d6a1464"
     },
     "src/toporeward/packet_localization_ablation.py": {
       "bytes": 2157,
@@ -276,26 +264,6 @@
     "src/toporeward/plan_parameter_alignment.py": {
       "bytes": 6970,
       "sha256": "b24528af8f91f5ecea0a3ce2504af779d7990fff5237b5cff0a63fe705739e7d"
-    },
-    "src/toporeward/prm/__init__.py": {
-      "bytes": 64,
-      "sha256": "e267276c1a7562533bee6af8126f47f652dbfbcded30009567992771e8eda761"
-    },
-    "src/toporeward/prm/neural_topoprm.py": {
-      "bytes": 10778,
-      "sha256": "798023f3b08b5955126407fcd030a0219ffd18996418131c359fc769087a65aa"
-    },
-    "src/toporeward/prm/simple_classifier.py": {
-      "bytes": 18034,
-      "sha256": "fa2059602105fba2b486b6fdc067664104bd619de2076ebcf802fdbbfe137a7b"
-    },
-    "src/toporeward/prm/topoprm_registry.py": {
-      "bytes": 2637,
-      "sha256": "7d93077205510cfcac2851f2a2c2c9346fc4b2030fe0e1273bede6819c331ad0"
-    },
-    "src/toporeward/program.py": {
-      "bytes": 882,
-      "sha256": "80163ac638726c75e552b22fca3dab9df7897958fca0a633af1529aaa6421820"
     },
     "src/toporeward/prompt_contract.py": {
       "bytes": 7453,
@@ -308,14 +276,6 @@
     "src/toporeward/public_profile_geometry.py": {
       "bytes": 7479,
       "sha256": "df8d73a8795da9bfee735b737eb40cb1479803ba5235c936b827c48e6abb0606"
-    },
-    "src/toporeward/rlvr/__init__.py": {
-      "bytes": 1135,
-      "sha256": "bb6fe52f65c1a99dcc267768e4cbd5e996c1937f5de1997bf651aba942242b96"
-    },
-    "src/toporeward/rlvr/rewards.py": {
-      "bytes": 44025,
-      "sha256": "b77956813c214a03a8a2b875261e0b35c32d71a3af69b298f99697d2bb0f46b3"
     },
     "src/toporeward/stage_a_boundary_context.py": {
       "bytes": 4574,
@@ -421,9 +381,13 @@
       "bytes": 4986,
       "sha256": "59b35c0b31b97270ae71cbba96f14134e73f19977313be3afdc978b947f726a5"
     },
+    "src/toporeward/structure_stats.py": {
+      "bytes": 644,
+      "sha256": "9cad6919ffe06d454ae4cbea453ca9833e45765862fe2a4d12be913e4aba99ec"
+    },
     "src/toporeward/structured_consequence.py": {
-      "bytes": 15102,
-      "sha256": "e77d48ac9fece3efd8fd58b32a9dc676d674daa1c0bb2513933a03048748b71f"
+      "bytes": 15113,
+      "sha256": "3786f63d5a81afa9d42d2853f0a151ed8fdab73e28fe8999945dc6edd72cbddc"
     },
     "src/toporeward/text2cad_bridge.py": {
       "bytes": 10363,
@@ -442,12 +406,12 @@
       "sha256": "7d75fe826006fb227b4977cc787df10208666f4d024a558abca616405893c607"
     },
     "src/toporeward/topoplan.py": {
-      "bytes": 7469,
-      "sha256": "7ac987c15c9527b922ffc353d651323a2c6b464184f240b5fa9c5aad0491f73a"
+      "bytes": 7480,
+      "sha256": "a91c0cd10895673c2644eea536fc5b13fd36dc878ebaf55ed17d21655ab45f59"
     },
     "src/toporeward/topoplan_v2.py": {
-      "bytes": 37527,
-      "sha256": "a43628a10891f5537d9be70349e9f12fe50d78954feebce8ef8d0c17927b8bfc"
+      "bytes": 37538,
+      "sha256": "51ab5d16683191435a87b55397af49a7ff6fa0f42becf15e66352f4321240765"
     },
     "src/toporeward/verifier/__init__.py": {
       "bytes": 180,
@@ -482,11 +446,11 @@
       "sha256": "b819774410ace05b5fdf25d368228d6e5d163f82c117e78d6d1b44439802c3f2"
     },
     "tests/test_verifier.py": {
-      "bytes": 7786,
-      "sha256": "6f1ab96623894ccd1642484febba0450ab83f7c95d5d04b34860c6a209d72d40"
+      "bytes": 7934,
+      "sha256": "09527b9526b9a544dec4d4313e60ed7af01ca82fdea5ed3eb6237aba0f2322e8"
     }
   },
-  "scope": "original code plus separately licensed derived data; no model weights",
+  "scope": "repair and evaluation code with separately licensed derived data; no training code or model weights",
   "main_repair_cases": 347,
   "geometry_cases": 23
 }

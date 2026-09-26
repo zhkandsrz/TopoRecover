@@ -15,7 +15,7 @@ from .actions import (
     StartLoop,
     action_to_text,
 )
-from .rlvr import structure_stats
+from .structure_stats import structure_stats
 
 
 @dataclass(frozen=True)

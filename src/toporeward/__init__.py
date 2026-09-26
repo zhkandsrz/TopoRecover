@@ -1,2 +1,2 @@
-"""TopoReward local research prototype."""
+"""TopoRecover CAD command verification and repair."""
 

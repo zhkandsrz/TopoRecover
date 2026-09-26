@@ -18,7 +18,7 @@ from .actions import (
     StartLoop,
     StartSketch,
 )
-from .rlvr import structure_stats
+from .structure_stats import structure_stats
 from .structured_consequence import evaluate_structured_consequence
 from .verifier import TopoVerifier, VerificationState
 

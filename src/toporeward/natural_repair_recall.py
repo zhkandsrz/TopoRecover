@@ -10,7 +10,7 @@ from .actions import Action
 from .bounded_patch_repair import replay_lines, strict_target_reached
 from .failure_certificate import build_failure_certificate
 from .lm.parsing import parse_action_line
-from .rlvr import structure_stats
+from .structure_stats import structure_stats
 from .structure_family import structure_family_id
 from .topology_history_repair import canonical_action_lines
 from .topology_history_repair import topology_intent_contract

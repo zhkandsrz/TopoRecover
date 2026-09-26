@@ -19,7 +19,7 @@ from .actions import (
     action_to_text,
 )
 from .lm.parsing import parse_action_line
-from .rlvr import structure_stats
+from .structure_stats import structure_stats
 from .verifier import TopoVerifier, VerificationState
 
 

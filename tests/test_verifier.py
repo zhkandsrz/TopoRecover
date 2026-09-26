@@ -1,11 +1,6 @@
 from __future__ import annotations
 
-import sys
 import unittest
-from pathlib import Path
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "toporeward" / "src"))
 
 from toporeward.actions import (
     AddArc,
@@ -21,7 +16,6 @@ from toporeward.actions import (
     StartLoop,
     StartSketch,
 )
-from toporeward.data.synthetic import make_rectangle_program
 from toporeward.verifier import TopoVerifier
 
 
@@ -38,8 +32,16 @@ class TopoVerifierTest(unittest.TestCase):
         return state
 
     def test_valid_rectangle_program(self) -> None:
-        program = make_rectangle_program("rect")
-        result = self.verifier.verify_program(program.actions)
+        actions = [
+            StartSketch(), StartFace(), StartLoop("outer"),
+            AddLine((0.0, 0.0), (1.0, 0.0)),
+            AddLine((1.0, 0.0), (1.0, 1.0)),
+            AddLine((1.0, 1.0), (0.0, 1.0)),
+            AddLine((0.0, 1.0), (0.0, 0.0)),
+            EndLoop(), EndFace(), RegisterProfile("profile_0"),
+            EndSketch(), Extrude("profile_0", depth=0.5, op="add"), End(),
+        ]
+        result = self.verifier.verify_program(actions)
         self.assertTrue(result.valid, result)
         self.assertTrue(result.next_state.ended)
 

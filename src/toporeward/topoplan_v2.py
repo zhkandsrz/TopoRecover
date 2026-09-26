@@ -18,7 +18,7 @@ from .actions import (
     action_to_text,
 )
 from .lm.parsing import parse_action_line
-from .rlvr import structure_stats
+from .structure_stats import structure_stats
 from .topoplan import coerce_target_stats, profile_plan_from_actions, progress_score
 from .verifier import TopoVerifier, VerificationState
 from .verifier.geometry import (

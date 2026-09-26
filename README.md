@@ -6,9 +6,10 @@ and source records. A saved profile that disagrees with the feature plan points
 back to its producing commands, which need not coincide with a later runtime error.
 Localized model proposals are checked before execution repair and final CAD validation.
 
-This is a review release. It contains no model weights, author contact information,
-server configuration, or upstream project history. The Python namespace remains
-`toporeward` to preserve compatibility with the frozen implementation.
+This review release contains the repair implementation and the inputs, outputs,
+and evaluation tools needed to reproduce the reported comparisons. Model weights,
+training code, server configuration, paper drafts, and development logs are not
+included. The Python namespace remains `toporeward` for compatibility.
 
 ## Quick Start
 
@@ -63,9 +64,7 @@ requires `--allow-subset` and must not be reported as the complete main table.
 |---|---|
 | `src/toporeward/verifier/` | State-machine interpreter and construction checks |
 | `src/toporeward/llm_stage_a.py` | Profile diagnosis and source-region patch interface |
-| `src/toporeward/stage_a_public_parameter_policy.py` | Public requirements and model-request orchestration |
-| `src/toporeward/stage_a_geometry_constrained_fallback.py` | Final acceptance and bounded fallback |
-| `src/toporeward/stage_a_profile_packets.py` | Localized commands, existing geometry, requirements and output schema |
+| `src/toporeward/stage_a_*.py`, `stage_b_*.py` | Required patch, geometry-check and execution-repair dependencies |
 | `scripts/` | Repair, adapted baseline, regeneration, evaluation and reporting entry points |
 | `configs/` | Actual model identities and decoding/search budgets |
 | `examples/native_ring.json` | Synthetic native-reference fixture for the plan utility |
@@ -75,6 +74,10 @@ requires `--allow-subset` and must not be reported as the complete main table.
 | `results/main/` | All six methods' outputs and per-case measurements, including failures |
 | `results/localization/` | Four matched region-selector arms |
 | `tests/` | Verifier, geometry protection, localization and release checks |
+
+Start with `scripts/repair.py` to follow the method. The small `stage_a` and
+`stage_b` modules implement its dependencies, not separate experiment variants.
+All baseline outputs and failed cases are retained for comparable evaluation.
 
 ## Reproduction and Limitations
 
